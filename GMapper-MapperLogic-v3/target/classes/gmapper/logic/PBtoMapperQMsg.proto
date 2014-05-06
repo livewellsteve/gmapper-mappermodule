@@ -1,0 +1,17 @@
+package gmapper.logic;
+
+option java_package="gmapper.logic";
+option java_outer_classname="ProtobuftoMapperQMsg";
+
+message ToMapperQMsg{
+
+	required int32 mapperId = 4;
+	
+	repeated string field_name = 5;
+	repeated string field_value = 6;
+	repeated string field_type = 7;
+	
+}
+	
+	
+	

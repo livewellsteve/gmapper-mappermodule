@@ -1,0 +1,45 @@
+package gmapper.logic;
+
+option java_outer_classname="ProtobufData";
+
+message QData{
+	optional int32 mapperFieldConfigId =1;
+	
+	optional string action = 2;
+	optional string listener_table_name = 3;
+	optional string trigger_name = 4;
+	
+	optional string source_endpoint = 5;
+	optional string source_db_name = 6;
+	optional string source_user = 7;
+	optional string source_password = 8;
+	optional string source_type = 9;
+
+	optional string target_endpoint = 10;
+	optional string target_db_name = 11;
+	optional string target_user = 12;
+	optional string target_password = 13;
+	optional string target_type = 14;
+
+
+	optional string source_obj_name = 15;
+	optional string source_pk_name = 16;
+	repeated string source_field_name =17;
+	repeated string source_field_type =18;
+	repeated string source_field_value = 23;
+
+	optional string target_obj_name = 19;
+	optional string target_pk_name = 20;
+	repeated string target_field_name =21;
+	repeated string target_field_type =22;
+	repeated string target_field_value = 24;
+	
+	optional string time = 25;
+	repeated string source_pk_val = 26;
+	repeated string target_pk_val = 27;
+	
+	optional string mapperLogic =28;
+	}
+	
+	
+	
